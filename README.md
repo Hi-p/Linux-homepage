@@ -35,7 +35,7 @@ Linux-homepage/
 ├── login.php   # 사용자 인증 및 세션 생성
 ├── logout.php  # 세션 파기 및 로그아웃 처리
 └── write.php   # 게시글 작성 및 DB Insert 로직
-
+```
 ---
 
 ## 💡 Troubleshooting (백엔드 핵심 포인트)
