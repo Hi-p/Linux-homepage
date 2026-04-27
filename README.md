@@ -61,4 +61,4 @@ Linux-homepage/
 • Server IP: 202.31.245.145
 
 ---
-Developed by J00n-oh Kwak (2026)
+Developed by Joon-oh Kwak (2026)
