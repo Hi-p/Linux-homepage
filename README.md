@@ -39,17 +39,19 @@ Linux-homepage/
 ---
 
 ## 💡 Troubleshooting (백엔드 핵심 포인트)
+
 이번 프로젝트를 진행하며 발생한 주요 보안 이슈와 해결 과정을 기록합니다.
 
-1. SELinux 보안 정책으로 인한 DB 연결 실패
-  • 현상: setenforce 1 상태에서 PHP의 DB 접속이 차단됨 (Error 13: Permission denied).
+### 1. SELinux 보안 정책으로 인한 DB 연결 실패
+* **현상**: `setenforce 1` 상태에서 PHP의 DB 접속이 차단됨 (Error 13: Permission denied).
+* **해결**: 아파치 서버의 네트워크 연결 권한을 허용하여 해결했습니다.
+    ```bash
+    setsebool -P httpd_can_network_connect_db 1
+    ```
 
-  • 해결: 아파치 서버의 네트워크 연결 권한(httpd_can_network_connect_db)을 허용하여 해결.
-
-2. Unix Socket vs TCP/IP 접속 방식의 차이
-  • 현상: localhost 사용 시 내부 소켓 파일 접근 권한 이슈로 연결 실패.
-
-  • 해결: DB 호스트 주소를 127.0.0.1로 변경하여 TCP/IP 통신 방식으로 우회, 보안 정책과 충돌 없이 안정적인 연결 확보.
+### 2. Unix Socket vs TCP/IP 접속 방식의 차이
+* **현상**: `localhost` 사용 시 내부 소켓 파일 접근 권한 이슈로 연결 실패.
+* **해결**: DB 호스트 주소를 `127.0.0.1`로 변경하여 TCP/IP 통신 방식으로 우회, 보안 정책과 충돌 없이 안정적인 연결을 확보했습니다.
 
 ---
 
