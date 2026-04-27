@@ -13,7 +13,6 @@
 | **Database** | MariaDB |
 | **Language** | PHP 8.x |
 | **Deployment** | GitHub, DuckDNS |
-| **Dev Tool** | VS Code, MacBook M4 Pro |
 
 ---
 
