@@ -15,7 +15,7 @@
     <div class="form-box">
         <h2>로그인</h2>
         <form method="POST">
-            <input type="text" name="userid" placeholder="아이디" required>
+            <input type="text" name="userid" placeholder="아이디(kiera)" required>
             <input type="password" name="userpw" placeholder="비밀번호" required>
             <button type="submit">로그인</button>
         </form>

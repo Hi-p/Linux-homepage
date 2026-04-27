@@ -3,7 +3,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Kiera 자유 게시판</title>
+    <title>Kiera 서버</title>
     <style>
         body { width: 600px; margin: 50px auto; font-family: 'Malgun Gothic', sans-serif; background-color: #f4f4f9; color: #333; }
         .header { text-align: center; margin-bottom: 20px; }
@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>🚀 Kiera 자유 게시판</h1>
+        <h1>🚀 Kiera 서버</h1>
     </div>
 
     <div class="box">
