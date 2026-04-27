@@ -1,6 +1,6 @@
 # 🚀 Kiera 자유 게시판 (Simple APM BBS)
 
-> **리눅스 서버 관리 기말고사 프로젝트** > Apache, PHP, MariaDB(APM) 환경에서 구축한 사용자 참여형 자유 게시판입니다.
+> **리눅스 서버 관리 프로젝트** > Apache, PHP, MariaDB(APM) 환경에서 구축한 사용자 참여형 자유 게시판입니다.
 
 ---
 
@@ -39,7 +39,7 @@ Linux-homepage/
 
 ---
 
-💡 Troubleshooting (백엔드 핵심 포인트)
+## 💡 Troubleshooting (백엔드 핵심 포인트)
 이번 프로젝트를 진행하며 발생한 주요 보안 이슈와 해결 과정을 기록합니다.
 
 1. SELinux 보안 정책으로 인한 DB 연결 실패
@@ -54,7 +54,7 @@ Linux-homepage/
 
 ---
 
-🌐 서비스 접속 정보
+## 🌐 서비스 접속 정보
 • Domain: http://kiera-sm.duckdns.org
 
 • Server IP: 202.31.245.145
